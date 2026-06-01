@@ -25,7 +25,7 @@ const [chat, setChat] = useState<MessageProps[]>([]);
 
   useEffect(() => {
     //Django ka Websocket URL(Jo routing.py mein set kiya tha)
-    const ws = new WebSocket("ws://127.0.0.1:8000/ws/chat/");
+    const ws = new WebSocket("ws://realtime-chat-backend-2awa.onrender.com/ws/chat/");
 
     ws.onopen = () => console.log("Django se connect ho gaya!");
 
